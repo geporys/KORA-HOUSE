@@ -1,0 +1,56 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='dist/style.css'>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="navbar">
+                <img class="logo" src="src/icons/logo.svg" alt="KORA">
+                <h3 class="title">KORA</h3>
+            </div>
+        </header>
+
+
+
+        <nav>
+            <ul class="refs">
+                <li>Дома</li>
+                <li>Пиломатериалы</li>
+                <li>Фотогалерея</li>
+                <li>Контакты</li>
+            </ul>
+        </nav>
+
+
+
+        <main>
+            <div class="order">
+                <h1>СДЕЛАТЬ ЗАКАЗ</h1>
+                <form>
+                    <div class="fields">
+                        <div id="dragAndDropWindow" class="hide">Перетащите файл в выделенную область</div>
+                        <input class="field" type="tel" placeholder="Ваш номер телефона" />
+                        <input class="field" type="email" placeholder="Ваш e-mail" />
+                        <textarea id="commentsForOrder" class="field" type="text" placeholder="Опишите ваш заказ"></textarea>
+                        <div class="filesContainer"></div>
+                        <div class="buttonContainer">
+                            <input type="file" id="fileElem" multiple> 
+                            <label  for="fileElem">Выбрать файл</label>
+                            <button>ОТПРАВИТЬ ЗАКАЗ</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+
+        <script type="text/javascript" src="dist/bundle.js"></script>
+    </body>
+
+</html>
+

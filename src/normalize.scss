@@ -1,0 +1,16 @@
+// colors
+$tema: rgba(255, 235, 59, 0.9);
+
+// fonts
+$abel: 'Abel', sans-serif;
+
+@import "normalize-scss/sass/_normalize.scss";
+@include normalize();
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}

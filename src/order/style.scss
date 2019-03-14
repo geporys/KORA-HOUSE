@@ -1,0 +1,101 @@
+@import "../normalize";
+
+$width: 500px;
+$borderField: 1px solid darkgray;
+
+.hide {
+    display: none;
+}
+
+.order {
+    input[type="file"] {
+        display: none;
+    }
+    h1 {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.fields {
+    width: $width;
+    position: relative;
+    .field {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+        border: $borderField;
+    }
+    textarea {
+        height: 120px;
+        resize: none;
+    }
+    .dragenDropField {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255,255,255, 0.9);
+        top: 0;
+        left: -14px;
+        text-align: center;
+        font-weight: bold;
+        border: 2px solid black;
+        padding: 16px;
+        border-radius: 16px;
+    }
+}
+
+.fileContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    button {
+        border: none;
+        outline: none;
+        background: none;
+    }
+    img {
+        width: 24px;
+        height: 24px;
+    }
+    p {
+        display: inline;
+        padding: 0 8px;
+        vertical-align: super;
+    }
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 100%;
+
+    button {
+        background: $tema;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-family: $abel;
+        border: $borderField;
+    }
+    label {
+        cursor: pointer;
+        border: $borderField;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    @media screen and (max-width: 690px) {
+        display: block;
+        justify-content: none;
+        button {
+            margin-top: 18px;
+        }
+    }
+}

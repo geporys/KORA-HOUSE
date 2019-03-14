@@ -1,0 +1,26 @@
+@import "../normalize";
+
+header {
+    background-color: $tema;
+    width: 100%;
+    top:0;
+    left: 0;
+    position: fixed;
+}
+
+.navbar {
+    padding: 16px;
+    margin: 0 auto;
+    width: 70%;
+    font-family: $abel;
+}
+
+.logo {
+    width: 24px;
+    padding-right: 8px;
+}
+
+.title {
+    display: inline;
+    vertical-align: super;
+}
