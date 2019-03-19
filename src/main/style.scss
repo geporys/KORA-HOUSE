@@ -1,4 +1,10 @@
 main {
     margin: 0 auto;
     width: 70%;
+    h3 {
+        text-align: center;
+        // border-left: none;
+        border-right: none; 
+        padding: 4px;
+    }
 }

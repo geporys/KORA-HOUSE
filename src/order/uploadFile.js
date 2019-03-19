@@ -6,8 +6,8 @@ class FileManager {
     constructor() {
         this.addedFiles = [];
         this.filesContainer = document.getElementsByClassName("filesContainer")[0];
-        this.deleteIcon = "/Users/germanignatovich/Desktop/work/sawmill/src/icons/error.svg"; // TODO настроить webpack на иконки
-        this.fileIcon = "/Users/germanignatovich/Desktop/work/sawmill/src/icons/file.svg";
+        this.deleteIcon = "/Users/germanignatovich/Desktop/work/KORA-HOUSE/src/icons/error.svg"; // TODO настроить webpack на иконки
+        this.fileIcon = "/Users/germanignatovich/Desktop/work/KORA-HOUSE/src/icons/file.svg";
     }
 
     showFiles(newFiles) {
@@ -54,7 +54,7 @@ class FileManager {
         deleteButton.type = "button";
 
         const containerForIcon = document.createElement("img");
-        containerForIcon.src = error;
+        containerForIcon.src = this.deleteIcon;
         deleteButton.appendChild(containerForIcon);
         deleteButton.onclick = (e) => this.deleteFile(e, idFile);
 

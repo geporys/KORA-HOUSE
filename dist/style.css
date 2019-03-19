@@ -1,31 +1,10 @@
 @font-face {
   font-family: "Abel";
-  src: url(file/); }
+  src: url(7e3d2a92473b14dea460b9b87b4639bf.ttf); }
 
 @font-face {
   font-family: "Roboto";
-  src: url(file/); }
-nav {
-  width: 70%;
-  margin: 90px auto;
-  border: 1px solid black;
-  border-right: none;
-  border-left: none; }
-
-.refs {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around; }
-  @media screen and (max-width: 690px) {
-    .refs {
-      display: block;
-      text-align: center; }
-      .refs li {
-        padding: 10px 0;
-        cursor: pointer; } }
-main {
-  margin: 0 auto;
-  width: 70%; }
+  src: url(fc84e998bc29b297ea20321e4c90b6ed.ttf); }
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -865,6 +844,31 @@ header {
 .title {
   display: inline;
   vertical-align: super; }
+nav {
+  width: 70%;
+  margin: 90px auto;
+  border: 1px solid black;
+  border-right: none;
+  border-left: none; }
+
+.refs {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around; }
+  @media screen and (max-width: 690px) {
+    .refs {
+      display: block;
+      text-align: center; }
+      .refs li {
+        padding: 10px 0;
+        cursor: pointer; } }
+main {
+  margin: 0 auto;
+  width: 70%; }
+  main h3 {
+    text-align: center;
+    border-right: none;
+    padding: 4px; }
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -1280,9 +1284,6 @@ button {
 
 .order input[type="file"] {
   display: none; }
-
-.order h1 {
-  text-align: center; }
 
 .order form {
   display: flex;
