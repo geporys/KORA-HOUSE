@@ -1,0 +1,24 @@
+.description-2 {
+    padding: 16px;
+}
+
+.lumber-table {
+    margin-top: 60px;
+    table {
+        background-color: ghostwhite;
+        margin: 0 auto;
+        border-spacing: 0px;
+        border: 1px solid black;
+        font-size: 1em;
+    }
+    td {
+        text-align: center;
+        border: 1px solid black;
+        padding: 30px;
+        @media screen and (max-width: 650px) {
+            font-size: 0.6em;
+            padding: 1%;
+        }
+    }
+
+}

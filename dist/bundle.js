@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _order_uploadFile_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./order/uploadFile.js */ \"./src/order/uploadFile.js\");\n/* harmony import */ var _homes_homes_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./homes/homes.js */ \"./src/homes/homes.js\");\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts/fonts.scss */ \"./src/fonts/fonts.scss\");\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _normalize_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./normalize.scss */ \"./src/normalize.scss\");\n/* harmony import */ var _normalize_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_normalize_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _header_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./header/style.scss */ \"./src/header/style.scss\");\n/* harmony import */ var _header_style_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_header_style_scss__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _main_style_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./main/style.scss */ \"./src/main/style.scss\");\n/* harmony import */ var _main_style_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_main_style_scss__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _order_style_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./order/style.scss */ \"./src/order/style.scss\");\n/* harmony import */ var _order_style_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_order_style_scss__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _homes_style_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./homes/style.scss */ \"./src/homes/style.scss\");\n/* harmony import */ var _homes_style_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_homes_style_scss__WEBPACK_IMPORTED_MODULE_7__);\n// js\n\n\n\n// scss\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _order_uploadFile_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./order/uploadFile.js */ \"./src/order/uploadFile.js\");\n/* harmony import */ var _homes_homes_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./homes/homes.js */ \"./src/homes/homes.js\");\n/* harmony import */ var _lumber_lumberTable_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lumber/lumberTable.js */ \"./src/lumber/lumberTable.js\");\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fonts/fonts.scss */ \"./src/fonts/fonts.scss\");\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _normalize_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./normalize.scss */ \"./src/normalize.scss\");\n/* harmony import */ var _normalize_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_normalize_scss__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _header_style_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header/style.scss */ \"./src/header/style.scss\");\n/* harmony import */ var _header_style_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_header_style_scss__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _main_style_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./main/style.scss */ \"./src/main/style.scss\");\n/* harmony import */ var _main_style_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_main_style_scss__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _order_style_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./order/style.scss */ \"./src/order/style.scss\");\n/* harmony import */ var _order_style_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_order_style_scss__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _homes_style_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./homes/style.scss */ \"./src/homes/style.scss\");\n/* harmony import */ var _homes_style_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_homes_style_scss__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _lumber_style_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./lumber/style.scss */ \"./src/lumber/style.scss\");\n/* harmony import */ var _lumber_style_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_lumber_style_scss__WEBPACK_IMPORTED_MODULE_9__);\n// js\n\n\n\n\n// scss\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -154,6 +154,29 @@ eval("module.exports = __webpack_require__.p + \"fdeeccc473be5442c9def3687c07dce
 
 /***/ }),
 
+/***/ "./src/lumber/lumberTable.js":
+/*!***********************************!*\
+  !*** ./src/lumber/lumberTable.js ***!
+  \***********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mockData_lumber__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mockData/lumber */ \"./src/mockData/lumber.js\");\n\n\nclass LumberTable {\n    constructor() {\n        this.lumberTableContainer = document.getElementById(\"lumber-table\");\n        this.columns = [\"Размер, мм\t\", \"2 сорт, руб.\", \"ТУ нал/бнал, руб.\", \"ГОСТ нал/бнал, руб.\", \"Ед. измер\"];\n    }\n\n    createTable(lumberData) {\n        const tableContainer = document.createElement(\"table\");\n\n        const tbody = this.createTbody();\n        tableContainer.appendChild(tbody);\n\n        lumberData.forEach(({ size, price1, price2, gost, unit }) => {\n            const tr = document.createElement(\"tr\");\n\n            tr.appendChild(this.createTD(size));\n            tr.appendChild(this.createTD(price1));\n            tr.appendChild(this.createTD(price2));\n            tr.appendChild(this.createTD(gost));\n            tr.appendChild(this.createTD(unit));\n\n            tableContainer.appendChild(tr);\n        });\n\n        this.lumberTableContainer.appendChild(tableContainer);\n    }\n\n    createTbody() {\n        const tbodyContainer = document.createElement(\"tbody\");\n\n        this.columns.forEach(nameColumn => {\n            const column = this.createTD(nameColumn);\n            tbodyContainer.appendChild(column);\n        });\n\n        return tbodyContainer;\n    }\n\n    createTD(content) {\n        const tdContainer = document.createElement(\"td\");\n        tdContainer.innerText = content;\n        return tdContainer;\n    }\n}\n\nconst lumberTable = new LumberTable();\n\nlumberTable.createTable(_mockData_lumber__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/lumber/lumberTable.js?");
+
+/***/ }),
+
+/***/ "./src/lumber/style.scss":
+/*!*******************************!*\
+  !*** ./src/lumber/style.scss ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/lumber/style.scss?");
+
+/***/ }),
+
 /***/ "./src/main/style.scss":
 /*!*****************************!*\
   !*** ./src/main/style.scss ***!
@@ -174,6 +197,18 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ([{\n    name: \"1-23\",\n    square: \"127\",\n    image: \"\"\n}, {\n    name: \"1-24\",\n    square: \"127\",\n    image: \"\"\n}, {\n    name: \"1-22\",\n    square: \"127\",\n    image: \"\"\n}, {\n    name: \"1-28\",\n    square: \"127\",\n    image: \"\"\n}, {\n    name: \"1-20\",\n    square: \"127\",\n    image: \"\"\n}, {\n    name: \"1-29\",\n    square: \"127\",\n    image: \"\"\n}, {\n    name: \"1-21\",\n    square: \"127\",\n    image: \"\"\n}, {\n    name: \"1-28\",\n    square: \"127\",\n    image: \"\"\n}]);\n\n//# sourceURL=webpack:///./src/mockData/homes.js?");
+
+/***/ }),
+
+/***/ "./src/mockData/lumber.js":
+/*!********************************!*\
+  !*** ./src/mockData/lumber.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ([{\n    size: \"50x50x3000\",\n    price1: \"6100\",\n    price2: \"5985\",\n    gost: \"7135\",\n    unit: \"м3\"\n}, {\n    size: \"100x100x6000\",\n    price1: \"6100\",\n    price2: \"5985\",\n    gost: \"7135\",\n    unit: \"м3\"\n}, {\n    size: \"100x150x6000\",\n    price1: \"6100\",\n    price2: \"5985\",\n    gost: \"7135\",\n    unit: \"м3\"\n}, {\n    size: \"50x200x6000\",\n    price1: \"6100\",\n    price2: \"5985\",\n    gost: \"7135\",\n    unit: \"м3\"\n}, {\n    size: \"150x150x6000\",\n    price1: \"6100\",\n    price2: \"5985\",\n    gost: \"7135\",\n    unit: \"м3\"\n}, {\n    size: \"150x200x6000\",\n    price1: \"6100\",\n    price2: \"5985\",\n    gost: \"7135\",\n    unit: \"м3\"\n}, {\n    size: \"200x200x6000\",\n    price1: \"6100\",\n    price2: \"5985\",\n    gost: \"7135\",\n    unit: \"м3\"\n}]);\n\n//# sourceURL=webpack:///./src/mockData/lumber.js?");
 
 /***/ }),
 

@@ -5,13 +5,6 @@
 @font-face {
   font-family: "Roboto";
   src: url(fc84e998bc29b297ea20321e4c90b6ed.ttf); }
-main {
-  margin: 0 auto;
-  width: 100%; }
-  main h3 {
-    text-align: center;
-    border-right: none;
-    padding: 4px; }
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -838,7 +831,9 @@ button {
   left: 0;
   position: fixed;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; }
   .header a {
     text-decoration: none;
     color: black;
@@ -874,11 +869,21 @@ button {
     padding: 6px 24px; }
   @media screen and (max-width: 690px) {
     .refs {
-      display: block;
+      display: none;
       text-align: center; }
       .refs li {
         padding: 10px 0;
         cursor: pointer; } }
+main {
+  margin: 0 auto;
+  width: 100%; }
+  main h3 {
+    text-align: center;
+    border-right: none;
+    padding: 4px; }
+
+.container {
+  margin-top: 80px; }
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -1377,3 +1382,22 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+.description-2 {
+  padding: 16px; }
+
+.lumber-table {
+  margin-top: 60px; }
+  .lumber-table table {
+    background-color: ghostwhite;
+    margin: 0 auto;
+    border-spacing: 0px;
+    border: 1px solid black;
+    font-size: 1em; }
+  .lumber-table td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 30px; }
+    @media screen and (max-width: 650px) {
+      .lumber-table td {
+        font-size: 0.6em;
+        padding: 1%; } }

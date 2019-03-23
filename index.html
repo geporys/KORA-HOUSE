@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' href='dist/style.css'>
+        <title>KORA HOUSE</title>
     </head>
 
     <body>
@@ -26,45 +27,52 @@
 
         <div class="header-image"></div>
 
-
-
-
-
-
-
         <main>
 
-            <div class="us-homes">
+            <div class="container us-homes">
                     <h3>НАШИ ДОМА</h3>
                     <div id="homes" class="homes"></div>
-            </div>
-            
-            
-            
-            
-            
-            
-            
-            <div class="order">
-                <h3>СДЕЛАТЬ ЗАКАЗ</h3>
-                <form>
-                    <div class="fields">
-                        <div id="drag-and-drop-window" class="hide">Перетащите файл в выделенную область</div>
-                        <input class="field" type="tel" placeholder="Ваш номер телефона" />
-                        <input class="field" type="email" placeholder="Ваш e-mail" />
-                        <textarea id="comments-for-order" class="field" type="text" placeholder="Опишите ваш заказ"></textarea>
-                        <div class="files-container"></div>
-                        <div class="button-container">
-                            <input type="file" id="file-elem" multiple> 
-                            <label  for="file-elem">Выбрать файл</label>
-                            <button>ОТПРАВИТЬ ЗАКАЗ</button>
-                        </div>
+            </div>  
+
+            <div class="container lumber">
+                <h3>ПИЛОИАТЕРИАЛЫ</h3>
+                <div class="description">
+                    <p>Компания «KORA HOUSE» предлагает купить пиломатериалы в Костроме и области из хвойных пород дерева от производителя по выгодным ценам.</p>
+                    <p>Наша компания работает с 1999 года и является надежным производителем и поставщиком. Мы имеем собственное производство и службу доставки,</p>
+                    <p>благодаря чему, вы получаете материал высокого качества по привлекательной цене в день заказа.</p>
+
+                    <div>
+                        <p>Доставка пиломатериалов осуществляется по Костроме и области в течение одного дня. Вы можете приехать к нам на склад, ознакомиться с</p> 
+                        <p>продукцией и самостоятельно осуществить вывоз покупки.</p>
                     </div>
-                </form>
+
+                </div>
+                <div id="lumber-table" class="lumber-table"></div>
             </div>
 
-            <div class="lumber">
+            <div class="container order">
+                    <h3>СДЕЛАТЬ ЗАКАЗ</h3>
+                    <form>
+                        <div class="fields">
+                            <div id="drag-and-drop-window" class="hide">Перетащите файл в выделенную область</div>
+                            <input class="field" type="tel" placeholder="Ваш номер телефона" />
+                            <input class="field" type="email" placeholder="Ваш e-mail" />
+                            <textarea id="comments-for-order" class="field" type="text" placeholder="Опишите ваш заказ"></textarea>
+                            <div class="files-container"></div>
+                            <div class="button-container">
+                                <input type="file" id="file-elem" multiple> 
+                                <label  for="file-elem">Выбрать файл</label>
+                                <button>ОТПРАВИТЬ ЗАКАЗ</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
+            <div class="container photo-gallery">
+                <h3>ФОТОГАЛЛЕРЕЯ</h3>
+                <div class="gallery">
+
+                </div>
             </div>
 
 
