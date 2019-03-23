@@ -1,17 +1,31 @@
 @import "../normalize";
 
-header {
-    background-color: $tema;
+.header {
+    background-color: white;
     width: 100%;
     top:0;
     left: 0;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 16px;
+        font-weight: 700;
+    }
+}
+
+.header-image {
+    width: 100%;
+    height: 830px;
+    background: url('../image/lumber.jpg');
+    background-size: cover;
 }
 
 .navbar {
     padding: 16px;
-    margin: 0 auto;
-    width: 70%;
     font-family: $abel;
 }
 
@@ -23,4 +37,26 @@ header {
 .title {
     display: inline;
     vertical-align: super;
+}
+
+.refs {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+
+    li {
+        padding: 6px 24px;
+    }
+
+    @media screen and (max-width: 690px) {
+        display: block;
+        text-align: center;
+        li {
+            padding: 10px 0;
+            cursor: pointer;
+        }
+    }
 }

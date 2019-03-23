@@ -1,6 +1,6 @@
 
 export default function drageDropFile(showFiles) {
-    const dragAndDropWindow = document.getElementById("dragAndDropWindow");
+    const dragAndDropWindow = document.getElementById("drag-and-drop-window");
     const documentElement = document.documentElement;
 
     ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
@@ -9,7 +9,7 @@ export default function drageDropFile(showFiles) {
       });
 
       documentElement.ondragover = (e) => {
-        dragAndDropWindow.className = "dragenDropField";
+        dragAndDropWindow.className = "dragen-drop-field";
     };
 
     documentElement.ondrop = (e) => {

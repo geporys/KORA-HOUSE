@@ -25,12 +25,19 @@ module.exports = {
               })
           },
           {
-            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            test: /\.(woff(2)?|ttf|eot|jpg|svg)?$/,
             use: [{
-                loader: 'file-loader',
-                options: "file/"
+                loader: 'file-loader'
             }]
-        }
+         },
+         {
+          test: /\.svg$/,
+          use: [
+            {
+              loader: "svg-inline-loader"
+            }
+          ]
+         }
     ] },
     plugins: [ 
         new ExtractTextPlugin(

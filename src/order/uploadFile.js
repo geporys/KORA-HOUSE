@@ -5,8 +5,8 @@ class FileManager {
 
     constructor() {
         this.addedFiles = [];
-        this.filesContainer = document.getElementsByClassName("filesContainer")[0];
-        this.deleteIcon = "/Users/germanignatovich/Desktop/work/KORA-HOUSE/src/icons/error.svg"; // TODO настроить webpack на иконки
+        this.filesContainer = document.getElementsByClassName("files-container")[0];
+        // this.deleteIcon = "/Users/germanignatovich/Desktop/work/KORA-HOUSE/src/icons/error.svg"; // TODO настроить webpack на иконки
         this.fileIcon = "/Users/germanignatovich/Desktop/work/KORA-HOUSE/src/icons/file.svg";
     }
 
@@ -22,7 +22,7 @@ class FileManager {
             fileContainer.appendChild(logoContainer);
             fileContainer.appendChild(deleteButton);
 
-            fileContainer.className = "fileContainer";
+            fileContainer.className = "file-container";
             fileContainer.dataset.idFile = idFile;
 
             this.addedFiles = [...this.addedFiles, file];
@@ -54,7 +54,7 @@ class FileManager {
         deleteButton.type = "button";
 
         const containerForIcon = document.createElement("img");
-        containerForIcon.src = this.deleteIcon;
+        containerForIcon.src = error;
         deleteButton.appendChild(containerForIcon);
         deleteButton.onclick = (e) => this.deleteFile(e, idFile);
 
@@ -75,7 +75,7 @@ class FileManager {
 
 }
 
-const inputFiles = document.getElementById("fileElem"); 
+const inputFiles = document.getElementById("file-elem"); 
 const fileManager = new FileManager(); // TODO добавить inputFiles в класс
 inputFiles.onchange = (e) => fileManager.handleFiles(e.target.files); // TODO добавить обрабутку события в класс, узнать как это сделать
 

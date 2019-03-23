@@ -8,33 +8,35 @@
 
     <body>
 
-        <header>
+        <header class="header">
             <div class="navbar">
                 <img class="logo" src="src/icons/logo.svg" alt="KORA">
-                <h3 class="title">KORA</h3>
+                <h3 class="title">KORA HOUSE</h3>
             </div>
+            <nav>
+                <ul class="refs">
+                    <li>Дома</li>
+                    <li>Пиломатериалы</li>
+                    <li>Фотогалерея</li>
+                    <li>Контакты</li>
+                </ul>
+            </nav>
+            <a href="tel:+79106603160">+7 (910) 660-31-60</a>
         </header>
 
+        <div class="header-image"></div>
 
 
-        <nav>
-            <ul class="refs">
-                <li>Дома</li>
-                <li>Пиломатериалы</li>
-                <li>Фотогалерея</li>
-                <li>Контакты</li>
-            </ul>
-        </nav>
+
+
 
 
 
         <main>
 
-            <div class="us_homes">
+            <div class="us-homes">
                     <h3>НАШИ ДОМА</h3>
-                    <div class="homes">
-                        
-                    </div>
+                    <div id="homes" class="homes"></div>
             </div>
             
             
@@ -47,18 +49,22 @@
                 <h3>СДЕЛАТЬ ЗАКАЗ</h3>
                 <form>
                     <div class="fields">
-                        <div id="dragAndDropWindow" class="hide">Перетащите файл в выделенную область</div>
+                        <div id="drag-and-drop-window" class="hide">Перетащите файл в выделенную область</div>
                         <input class="field" type="tel" placeholder="Ваш номер телефона" />
                         <input class="field" type="email" placeholder="Ваш e-mail" />
-                        <textarea id="commentsForOrder" class="field" type="text" placeholder="Опишите ваш заказ"></textarea>
-                        <div class="filesContainer"></div>
-                        <div class="buttonContainer">
-                            <input type="file" id="fileElem" multiple> 
-                            <label  for="fileElem">Выбрать файл</label>
+                        <textarea id="comments-for-order" class="field" type="text" placeholder="Опишите ваш заказ"></textarea>
+                        <div class="files-container"></div>
+                        <div class="button-container">
+                            <input type="file" id="file-elem" multiple> 
+                            <label  for="file-elem">Выбрать файл</label>
                             <button>ОТПРАВИТЬ ЗАКАЗ</button>
                         </div>
                     </div>
                 </form>
+            </div>
+
+            <div class="lumber">
+
             </div>
 
 

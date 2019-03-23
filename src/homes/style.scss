@@ -1,0 +1,17 @@
+.home {
+    width: 260px;
+    margin: 16px;
+    .home-image {
+        background-color: green;
+        height: 200px;
+    }
+    .home-specification {
+        background-color: lightgray;
+        padding: 8px;
+    }
+}
+.homes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

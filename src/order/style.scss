@@ -31,7 +31,7 @@ $borderField: 1px solid darkgray;
         height: 120px;
         resize: none;
     }
-    .dragenDropField {
+    .dragen-drop-field {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -46,7 +46,7 @@ $borderField: 1px solid darkgray;
     }
 }
 
-.fileContainer {
+.file-container {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
@@ -66,7 +66,7 @@ $borderField: 1px solid darkgray;
     }
 }
 
-.buttonContainer {
+.button-container {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;

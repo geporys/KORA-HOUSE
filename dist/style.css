@@ -5,6 +5,13 @@
 @font-face {
   font-family: "Roboto";
   src: url(fc84e998bc29b297ea20321e4c90b6ed.ttf); }
+main {
+  margin: 0 auto;
+  width: 100%; }
+  main h3 {
+    text-align: center;
+    border-right: none;
+    padding: 4px; }
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -824,17 +831,28 @@ body {
 button {
   cursor: pointer; }
 
-header {
-  background-color: rgba(255, 235, 59, 0.9);
+.header {
+  background-color: white;
   width: 100%;
   top: 0;
   left: 0;
-  position: fixed; }
+  position: fixed;
+  display: flex;
+  justify-content: space-between; }
+  .header a {
+    text-decoration: none;
+    color: black;
+    padding: 16px;
+    font-weight: 700; }
+
+.header-image {
+  width: 100%;
+  height: 830px;
+  background: url(012d42010a216159d7f98569b45d6d9e.jpg);
+  background-size: cover; }
 
 .navbar {
   padding: 16px;
-  margin: 0 auto;
-  width: 70%;
   font-family: "Abel", sans-serif; }
 
 .logo {
@@ -844,17 +862,16 @@ header {
 .title {
   display: inline;
   vertical-align: super; }
-nav {
-  width: 70%;
-  margin: 90px auto;
-  border: 1px solid black;
-  border-right: none;
-  border-left: none; }
 
 .refs {
   list-style-type: none;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  border: 1px solid black;
+  border-right: none;
+  border-left: none; }
+  .refs li {
+    padding: 6px 24px; }
   @media screen and (max-width: 690px) {
     .refs {
       display: block;
@@ -862,13 +879,6 @@ nav {
       .refs li {
         padding: 10px 0;
         cursor: pointer; } }
-main {
-  margin: 0 auto;
-  width: 70%; }
-  main h3 {
-    text-align: center;
-    border-right: none;
-    padding: 4px; }
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -1300,7 +1310,7 @@ button {
   .fields textarea {
     height: 120px;
     resize: none; }
-  .fields .dragenDropField {
+  .fields .dragen-drop-field {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -1313,43 +1323,57 @@ button {
     padding: 16px;
     border-radius: 16px; }
 
-.fileContainer {
+.file-container {
   display: flex;
   justify-content: space-between;
   padding: 10px 0; }
-  .fileContainer button {
+  .file-container button {
     border: none;
     outline: none;
     background: none; }
-  .fileContainer img {
+  .file-container img {
     width: 24px;
     height: 24px; }
-  .fileContainer p {
+  .file-container p {
     display: inline;
     padding: 0 8px;
     vertical-align: super; }
 
-.buttonContainer {
+.button-container {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
   width: 100%; }
-  .buttonContainer button {
+  .button-container button {
     background: rgba(255, 235, 59, 0.9);
     padding: 10px;
     border-radius: 5px;
     font-weight: 500;
     font-family: "Abel", sans-serif;
     border: 1px solid darkgray; }
-  .buttonContainer label {
+  .button-container label {
     cursor: pointer;
     border: 1px solid darkgray;
     text-align: center;
     padding: 10px;
     border-radius: 5px; }
   @media screen and (max-width: 690px) {
-    .buttonContainer {
+    .button-container {
       display: block;
       justify-content: none; }
-      .buttonContainer button {
+      .button-container button {
         margin-top: 18px; } }
+.home {
+  width: 260px;
+  margin: 16px; }
+  .home .home-image {
+    background-color: green;
+    height: 200px; }
+  .home .home-specification {
+    background-color: lightgray;
+    padding: 8px; }
+
+.homes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
