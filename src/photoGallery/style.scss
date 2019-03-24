@@ -1,0 +1,27 @@
+.gallery {
+    position: relative;
+}
+
+.current-image {
+    width: 100vw;    
+}
+
+.arrow {
+    padding: 10px;
+}
+
+.arrow-container {
+    position: absolute;
+    top: 1;
+    display: flex;
+    align-content: center;
+    height: 100%;
+}
+
+.arrow-container:first-child {
+    left: 1;
+}
+
+.arrow-container:nth-child(2) {
+    right: 1;
+}

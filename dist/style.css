@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Abel";
-  src: url(7e3d2a92473b14dea460b9b87b4639bf.ttf); }
+  src: url(src/fonts/Abel/Abel-Regular.ttf); }
 
 @font-face {
   font-family: "Roboto";
-  src: url(fc84e998bc29b297ea20321e4c90b6ed.ttf); }
+  src: url(src/fonts/Roboto/Roboto-Light.ttf); }
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -843,7 +843,7 @@ button {
 .header-image {
   width: 100%;
   height: 830px;
-  background: url(012d42010a216159d7f98569b45d6d9e.jpg);
+  background: url(src/image/lumber.jpg);
   background-size: cover; }
 
 .navbar {
@@ -1401,3 +1401,24 @@ button {
       .lumber-table td {
         font-size: 0.6em;
         padding: 1%; } }
+.gallery {
+  position: relative; }
+
+.current-image {
+  width: 100vw; }
+
+.arrow {
+  padding: 10px; }
+
+.arrow-container {
+  position: absolute;
+  top: 1;
+  display: flex;
+  align-content: center;
+  height: 100%; }
+
+.arrow-container:first-child {
+  left: 1; }
+
+.arrow-container:nth-child(2) {
+  right: 1; }
