@@ -1,13 +1,37 @@
-.gallery {
+.image-from-gallery {
     position: relative;
+    padding-top: 24px;
+    background-color: black;
 }
 
+.gallery {
+    display: flex;
+    height: 120px;
+    background-color: black;
+    align-items: center;
+    overflow-x: auto;
+}
 .current-image {
     width: 100vw;    
 }
 
+.current-image-in-gallery {
+    border: solid 2.5px #fc0;
+    transition: 0.5s
+}
+
+.iamge-gallery {
+    height: 90px;
+    width: 120px;
+    padding: 2px;
+}
+
+.iamge-gallery:first-child {
+    padding-left: 3px;
+}
+
 .arrow {
-    padding: 10px;
+    padding: 24px;
 }
 
 .arrow-container {

@@ -833,7 +833,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000; }
+  z-index: 1000;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); }
   .header a {
     text-decoration: none;
     color: black;
@@ -881,6 +882,8 @@ main {
     text-align: center;
     border-right: none;
     padding: 4px; }
+  main button {
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12); }
 
 .container {
   margin-top: 80px; }
@@ -1350,18 +1353,20 @@ button {
   padding-top: 10px;
   width: 100%; }
   .button-container button {
-    background: rgba(255, 235, 59, 0.9);
+    background: #965454;
     padding: 10px;
     border-radius: 5px;
     font-weight: 500;
     font-family: "Abel", sans-serif;
-    border: 1px solid darkgray; }
+    border: 1px solid darkgray;
+    color: white; }
   .button-container label {
     cursor: pointer;
     border: 1px solid darkgray;
     text-align: center;
     padding: 10px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12); }
   @media screen and (max-width: 690px) {
     .button-container {
       display: block;
@@ -1370,13 +1375,20 @@ button {
         margin-top: 18px; } }
 .home {
   width: 260px;
-  margin: 16px; }
+  margin: 16px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12); }
   .home .home-image {
     background-color: green;
     height: 200px; }
   .home .home-specification {
-    background-color: lightgray;
+    background-color: #E5E5E5;
     padding: 8px; }
+
+.home:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #386426; }
 
 .homes {
   display: flex;
@@ -1401,14 +1413,35 @@ button {
       .lumber-table td {
         font-size: 0.6em;
         padding: 1%; } }
+.image-from-gallery {
+  position: relative;
+  padding-top: 24px;
+  background-color: black; }
+
 .gallery {
-  position: relative; }
+  display: flex;
+  height: 120px;
+  background-color: black;
+  align-items: center;
+  overflow-x: auto; }
 
 .current-image {
   width: 100vw; }
 
+.current-image-in-gallery {
+  border: solid 2.5px #fc0;
+  transition: 0.5s; }
+
+.iamge-gallery {
+  height: 90px;
+  width: 120px;
+  padding: 2px; }
+
+.iamge-gallery:first-child {
+  padding-left: 3px; }
+
 .arrow {
-  padding: 10px; }
+  padding: 24px; }
 
 .arrow-container {
   position: absolute;
