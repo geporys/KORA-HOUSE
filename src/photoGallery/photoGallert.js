@@ -19,6 +19,7 @@ class Gallery {
         this.containerImages = null;
 
         this.currentImageContainer = document.createElement("img");
+        this.currentImageContainer.draggable = false;
         this.currentImageContainer.className = "current-image";
         this.imageContainer.appendChild(this.currentImageContainer);
 
@@ -29,6 +30,7 @@ class Gallery {
 
         this.containerImages = images.map((image, index) => {
           const imageContainer = document.createElement("img");
+          imageContainer.draggable = false;
           imageContainer.src = image;
           imageContainer.className = "iamge-gallery";
           imageContainer.onclick = () => {
@@ -43,14 +45,44 @@ class Gallery {
         
 
         this.backArrow.onclick = () => {
-            this.currentIndexImage = this.currentIndexImage - 1 === -1 ? images.length -1 : this.currentIndexImage - 1;
-            makeActive(this.currentIndexImage, images[this.currentIndexImage]);
+            this.checkBackImage();
+            this.makeActive(this.currentIndexImage, images[this.currentIndexImage]);
         }
 
         this.nextArrow.onclick = () => {
-            this.currentIndexImage = this.currentIndexImage + 1 === images.length ? 0 : this.currentIndexImage + 1;
-            makeActive(this.currentIndexImage, images[this.currentIndexImage]);
+            this.checkNextImage();
+            this.makeActive(this.currentIndexImage, images[this.currentIndexImage]);
         }
+
+        // this.currentImageContainer.onmousedown = (e) => {
+        //     const beginX = e.clientX
+        //     this.currentImageContainer.onmousemove = (e) => {
+        //         const difference = beginX - e.clientX
+        //         if (difference > 1000 || difference < 1000) {
+        //             if (difference > 0) {
+        //                 this.checkBackImage();
+        //                 this.makeActive(this.currentIndexImage, images[this.currentIndexImage]);
+        //             }
+        //             else {
+        //                 this.checkNextImage();     
+        //                 this.makeActive(this.currentIndexImage, images[this.currentIndexImage]);              
+        //             }
+        //             return false
+        //         }
+        //     }
+        // }
+
+        // this.currentImageContainer.onmouseup = () => {
+        //     this.currentImageContainer.onmousemove = null;
+        // }
+    }
+
+    checkNextImage() {
+        this.currentIndexImage = this.currentIndexImage + 1 === images.length ? 0 : this.currentIndexImage + 1;
+    }
+
+    checkBackImage() {
+        this.currentIndexImage = this.currentIndexImage - 1 === -1 ? images.length -1 : this.currentIndexImage - 1;
     }
 
     makeActive(index, image) {
