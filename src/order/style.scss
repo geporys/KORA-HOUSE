@@ -21,6 +21,9 @@ $borderField: 1px solid darkgray;
 .fields {
     width: $width;
     position: relative;
+    @media screen and (max-width: 500px) {
+        width: 300px;
+    }
     .field {
         width: 100%;
         padding: 10px;
@@ -69,7 +72,6 @@ $borderField: 1px solid darkgray;
 .button-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
     width: 100%;
 
     button {
@@ -91,10 +93,6 @@ $borderField: 1px solid darkgray;
     }
 
     @media screen and (max-width: 690px) {
-        display: block;
-        justify-content: none;
-        button {
-            margin-top: 18px;
-        }
+        font-size: 0.9em;        
     }
 }

@@ -1,0 +1,32 @@
+@import "../normalize";
+
+.map {
+    width: 100vw;
+    height: 60vh;
+}
+
+.contact {
+    position: relative;
+}
+
+.contact-information {
+    background-color: #613A43;
+    width: 220px;
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 40px;
+    padding: 10px 0;
+    color: white;
+    p {
+        padding: 0 12px;
+    }
+    @media screen and (max-width: 620px) { 
+    width: 100%; 
+    position: relative; 
+    box-shadow: none;
+    bottom: auto;
+    right: auto;
+    }
+
+}
