@@ -13,6 +13,16 @@ $scale: 1.05;
         background-color: #E5E5E5;
         padding: 8px;
     }
+    @media screen and (max-width: 585px) {
+        width: 130px;
+        margin: 4%;
+        .home-image {
+            height: 100px;
+        }
+        .home-specification {
+            font-size: 0.7em;
+        }
+    }
 }
 
 .home:hover {

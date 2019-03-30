@@ -1388,6 +1388,14 @@ button {
   .home .home-specification {
     background-color: #E5E5E5;
     padding: 8px; }
+  @media screen and (max-width: 585px) {
+    .home {
+      width: 130px;
+      margin: 4%; }
+      .home .home-image {
+        height: 100px; }
+      .home .home-specification {
+        font-size: 0.7em; } }
 
 .home:hover {
   -webkit-transform: scale(1.05);
