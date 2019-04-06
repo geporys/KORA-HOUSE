@@ -1,5 +1,6 @@
 import drageDropFile from "./dragenDropFile";
-import error from "../icons/error.svg";
+import cancel from "../icons/cancel.svg";
+import fileIcon from "../icons/file.svg";
 
 class FileManager {
 
@@ -7,7 +8,7 @@ class FileManager {
         this.addedFiles = [];
         this.filesContainer = document.getElementsByClassName("files-container")[0];
         // this.deleteIcon = "/Users/germanignatovich/Desktop/work/KORA-HOUSE/src/icons/error.svg"; // TODO настроить webpack на иконки
-        this.fileIcon = "/Users/germanignatovich/Desktop/work/KORA-HOUSE/src/icons/file.svg";
+        // this.fileIcon = "/Users/germanignatovich/Desktop/work/KORA-HOUSE/src/icons/file.svg";
     }
 
     showFiles(newFiles) {
@@ -37,12 +38,13 @@ class FileManager {
 
     createLogoFile(file) {
         const logoIcon = document.createElement("img");
-        logoIcon.src = this.fileIcon;
+        logoIcon.src = fileIcon;
 
         const logoText = document.createElement("p");
         logoText.innerText = file.name;
             
-        const logoContainer = document.createElement("span");
+        const logoContainer = document.createElement("div");
+        logoContainer.className = "file-information";
         logoContainer.appendChild(logoIcon);
         logoContainer.appendChild(logoText);
 
@@ -54,7 +56,7 @@ class FileManager {
         deleteButton.type = "button";
 
         const containerForIcon = document.createElement("img");
-        containerForIcon.src = error;
+        containerForIcon.src = cancel;
         deleteButton.appendChild(containerForIcon);
         deleteButton.onclick = (e) => this.deleteFile(e, idFile);
 

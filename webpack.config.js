@@ -33,14 +33,6 @@ module.exports = {
                   useRelativePath: true
              }
             }]
-         },
-         {
-          test: /\.svg$/,
-          use: [
-            {
-              loader: "svg-inline-loader"
-            }
-          ]
          }
     ] },
     plugins: [ 

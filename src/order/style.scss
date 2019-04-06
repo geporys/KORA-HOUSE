@@ -52,11 +52,11 @@ $borderField: 1px solid darkgray;
 .file-container {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
     button {
         border: none;
         outline: none;
         background: none;
+        box-shadow: none;
     }
     img {
         width: 24px;
@@ -66,6 +66,13 @@ $borderField: 1px solid darkgray;
         display: inline;
         padding: 0 8px;
         vertical-align: super;
+    }
+    .file-information {
+        width: 260px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
     }
 }
 
